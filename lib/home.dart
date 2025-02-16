@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profile.dart';
 import 'widgets/flex_box.dart';
 import 'dart:ui';
 import 'widgets/dashed_line.dart';
@@ -40,7 +41,10 @@ class _HomeState extends State<Home> {
                 size: 40,
               ),
               onPressed: () {
-                // Add your settings button action here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Profile()),
+                );
               },
             ),
           ),
